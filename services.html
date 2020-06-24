@@ -1,0 +1,504 @@
+
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Zhi+Mang+Xing&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(-45deg, #2874A6, #2874A6, #2874A6, #2874A6);
+      /* background: #000; */
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+  
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+  
+      50% {
+        background-position: 100% 50%;
+      }
+  
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @import url(https://fonts.googleapis.com/css?family=PT+Sans);
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'PT Sans', sans-serif;
+    display: table;
+    width: 100%;
+  
+  }
+  .container{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100vh;
+  }
+  button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 1.25rem 1.9rem;
+    background: rgba(0,0,0,0.09);
+  }
+  span{
+    display: block;
+    padding: 1.625rem 5rem;
+    font-size: 2.5rem;
+  }
+  button::before, button::after{
+    content:"";
+    width: 0;
+    height: 0.12rem;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  
+  span::before, span::after{
+    content:"";
+    width:0.12rem;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  button:hover::before, button:hover::after{
+    width: 100%;
+  }
+  button:hover span::before, button:hover span::after{
+    height: 100%;
+  }
+  /*----- button 1 -----*/
+  .btn-1::before, .btn-1::after{
+    transition-delay: 0.2s;
+  }
+  .btn-1 span::before, .btn-1 span::after{
+    transition-delay: 0s;
+  }
+  .btn-1::before{
+    right: 0;
+    top: 0;
+  }
+  .btn-1::after{
+    left: 0;
+    bottom: 0;
+  }
+  .btn-1 span::before{
+    left: 0;
+    top: 0;
+  }
+  .btn-1 span::after{
+    right: 0;
+    bottom: 0;
+  }
+  .btn-1:hover::before, .btn-1:hover::after{
+    transition-delay: 0s;
+  }
+  .btn-1:hover span::before, .btn-1:hover span::after{
+    transition-delay: 0.2s;
+  }
+  
+  /*--- Button 2 -------*/
+  
+  
+  .btn-2::before, .btn-2::after{
+    transition-delay: 0s;
+  }
+  .btn-2 span::before, .btn-2 span::after{
+    transition-delay: 0.2s;
+  }
+  .btn-2::before{
+    right: 0;
+    top: 0;
+  }
+  .btn-2::after{
+    left: 0;
+    bottom: 0;
+  }
+  .btn-2 span::before{
+    left: 0;
+    top: 0;
+  }
+  .btn-2 span::after{
+    right: 0;
+    bottom: 0;
+  }
+  .btn-2:hover::before, .btn-2:hover::after{
+    transition-delay: 0.2s;
+  }
+  .btn-2:hover span::before, .btn-2:hover span::after{
+    transition-delay: 0s;
+  }
+  
+  
+  /*----- button 3 -----*/
+  .btn-3::after{
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.6s;
+  }
+  .btn-3 span::after{
+    transition-delay: 0.4s;
+    right: 0;
+    bottom: 0
+  }
+  .btn-3::before{
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+  }
+  .btn-3 span::before{
+    transition-delay: 0s;
+    left: 0;
+    top: 0;
+  }
+  
+  .btn-3:hover::after{
+    transition-delay: 0s;
+  }
+  .btn-3:hover span::after{
+    transition-delay: 0.2s;
+  }
+  .btn-3:hover::before{
+    transition-delay: 0.4s;
+  }
+  .btn-3:hover span::before{
+    transition-delay: 0.6s;
+  }
+  
+  /*----- button 4 -----*/
+  .btn-4::after{
+    right:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-4 span::after{
+    right:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-4::before{
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-4 span::before{
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  
+  /*----- button 5 -----*/
+  .btn-5::after{
+    left:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-5 span::after{
+    right:0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-5::before{
+    right: 0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-5 span::before{
+    left: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  
+  /*----- button 6 -----*/
+  .btn-6::before{
+    left: 50%;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-6::after{
+    left: 50%;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-6 span::before{
+    left: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+  }
+  .btn-6 span::after{
+    right: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+  }
+  .btn-6:hover::before, .btn-6:hover::after{
+    left: 0;
+  }
+  .btn-6:hover span::before, .btn-6:hover span::after{
+    top: 0;
+  }
+  
+  @media  (max-width:960px){
+    html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+   
+  }
+  
+  .container{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100vh;
+  }
+  button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 1.25rem 1.9rem;
+    background: rgba(0,0,0,0.09);
+  }
+  span{
+    display: block;
+    padding: 1.625rem 5rem;
+  
+  }
+  button::before, button::after{
+    content:"";
+    width: 0;
+    height: 0.12rem;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  
+  span::before, span::after{
+    content:"";
+    width:0.12rem;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  button:hover::before, button:hover::after{
+    width: 100%;
+  }
+  button:hover span::before, button:hover span::after{
+    height: 100%;
+  }
+  /*----- button 1 -----*/
+  .btn-1::before, .btn-1::after{
+    transition-delay: 0.2s;
+  }
+  .btn-1 span::before, .btn-1 span::after{
+    transition-delay: 0s;
+  }
+  .btn-1::before{
+    right: 0;
+    top: 0;
+  }
+  .btn-1::after{
+    left: 0;
+    bottom: 0;
+  }
+  .btn-1 span::before{
+    left: 0;
+    top: 0;
+  }
+  .btn-1 span::after{
+    right: 0;
+    bottom: 0;
+  }
+  .btn-1:hover::before, .btn-1:hover::after{
+    transition-delay: 0s;
+  }
+  .btn-1:hover span::before, .btn-1:hover span::after{
+    transition-delay: 0.2s;
+  }
+  
+  /*--- Button 2 -------*/
+  
+  
+  .btn-2::before, .btn-2::after{
+    transition-delay: 0s;
+  }
+  .btn-2 span::before, .btn-2 span::after{
+    transition-delay: 0.2s;
+  }
+  .btn-2::before{
+    right: 0;
+    top: 0;
+  }
+  .btn-2::after{
+    left: 0;
+    bottom: 0;
+  }
+  .btn-2 span::before{
+    left: 0;
+    top: 0;
+  }
+  .btn-2 span::after{
+    right: 0;
+    bottom: 0;
+  }
+  .btn-2:hover::before, .btn-2:hover::after{
+    transition-delay: 0.2s;
+  }
+  .btn-2:hover span::before, .btn-2:hover span::after{
+    transition-delay: 0s;
+  }
+  
+  
+  /*----- button 3 -----*/
+  .btn-3::after{
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.6s;
+  }
+  .btn-3 span::after{
+    transition-delay: 0.4s;
+    right: 0;
+    bottom: 0
+  }
+  .btn-3::before{
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+  }
+  .btn-3 span::before{
+    transition-delay: 0s;
+    left: 0;
+    top: 0;
+  }
+  
+  .btn-3:hover::after{
+    transition-delay: 0s;
+  }
+  .btn-3:hover span::after{
+    transition-delay: 0.2s;
+  }
+  .btn-3:hover::before{
+    transition-delay: 0.4s;
+  }
+  .btn-3:hover span::before{
+    transition-delay: 0.6s;
+  }
+  
+  /*----- button 4 -----*/
+  .btn-4::after{
+    right:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-4 span::after{
+    right:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-4::before{
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-4 span::before{
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  
+  /*----- button 5 -----*/
+  .btn-5::after{
+    left:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-5 span::after{
+    right:0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-5::before{
+    right: 0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-5 span::before{
+    left: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  
+  /*----- button 6 -----*/
+  .btn-6::before{
+    left: 50%;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-6::after{
+    left: 50%;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .btn-6 span::before{
+    left: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+  }
+  .btn-6 span::after{
+    right: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+  }
+  .btn-6:hover::before, .btn-6:hover::after{
+    left: 0;
+  }
+  .btn-6:hover span::before, .btn-6:hover span::after{
+    top: 0;
+  }
+  }
+  </style>
+  
+  <body>
+   
+  <h1 style="text-align: center;color: #fff;margin-top: 2rem;font-family: 'Roboto Mono', monospace;font-size: 3rem;">OUR SERVICES</h1>
+    <div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
+      <div class="container" >
+        <button class="btn-1"><span style="font-family: 'Roboto Mono', monospace;
+          font-family: 'Zhi Mang Xing', cursive;"><a href="cat.html" style="text-decoration: none;color: #fff;">Doctors</a></span></button>
+        <button class="btn-2"><span style="font-family: 'Roboto Mono', monospace;
+          font-family: 'Zhi Mang Xing', cursive;"><a href="lab.php" style="text-decoration: none;color: #fff;">Lab Tests</a></span></button>
+        <button class="btn-3"><span style="font-family: 'Roboto Mono', monospace;
+          font-family: 'Zhi Mang Xing', cursive;"><a href="book_appointment.php" style="text-decoration: none;color: #fff;">Appointments</a></span></button>
+        <button class="btn-4"><span style="font-family: 'Roboto Mono', monospace;
+          font-family: 'Zhi Mang Xing', cursive;"><a href="camp.php" style="text-decoration: none;color: #fff;">Medical Camps</a></span></button>
+        <button class="btn-6"><span style="font-family: 'Roboto Mono', monospace;
+          font-family: 'Zhi Mang Xing', cursive;"> <a href="v.html" style="text-decoration: none;color: #fff;">Educational Viedos</a></span></button>
+         
+     
+      </div>
+    </div>
+  
+    
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+    integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+  
+  </html>

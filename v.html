@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="v.html">Educational Videos</a></li>
+        <li><a href="doctors.html">Doctors Review</a></li>
+        <li><a href="customers.html">Customers Review</a></li>
+       
+      </ul>
+    </div>
+  </nav>
+
+  
+<h1 align ="center">Educational Videos </h1>
+<div class="row" style="margin-left: 1px;">
+    <div class="column"  >
+        <iframe  id="forPostyouradd" width="480" height="300" src="https://www.youtube.com/embed/ejOWRaz8eS4"  frameborder="1000" allowhalfscreen></iframe>
+      <p style="text-align: justify;">Fungal infections are common throughout much of the natural world. In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle.</p>
+    </div>
+    <div class="column" >
+        <iframe id="forPostyouradd" width="480" height="300" src="https://www.youtube.com/embed/WwehfCel36o" frameborder="1000" allowhalfscreen></iframe>
+      <p style="text-align: justify;">A food allergy is an abnormal immune response to food. The symptoms of the allergic reaction may range from mild to severe. They may include itchiness, swelling of the tongue, vomiting, diarrhea, hives, trouble breathing, or low blood pressure. </p>
+    </div>
+    <div class="column">
+        <iframe id="forPostyouradd" width="480" height="300" src="https://www.youtube.com/embed/pcmrgwNCPwM" frameborder="1000" allowhalfscreen></iframe>
+      <p style="text-align: justify;">A heart attack occurs when blood flow to a part of the heart is blocked, usually by a blood clot. Without oxygenated blood, the heart muscle begins to die..</p>
+    </div>
+  </div>
+  
+<style>
+    /* nav {
+        width: 100%;
+        height: 10vh;
+        background-color: #2874A6;
+        color: white;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    nav a{
+  color: #fff;
+  padding:50px;
+  margin-top: 20px;
+} */
+    body {
+      background-image: url("images.jpg");
+      background-size: cover;
+    }
+    * {
+  box-sizing: border-box;
+}
+nav .navbar-nav{
+  color:#fff;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+    </style>
+
+</body>
+</html>
+
+
+
+
+
+<header class="header-image">
+    
+</header>
+<script>
+
+function postYourAdd () {
+var iframe = $("#forPostyouradd");
+iframe.attr("src", iframe.data("src")); 
+}
+</script>
